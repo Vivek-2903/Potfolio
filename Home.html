@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/Home.css">
+    <link rel="stylesheet" href="CSS/About.css">
+    <link rel="stylesheet" href="CSS/Skills.css">
+    <link rel="stylesheet" href="CSS/Contact.css">
+    <link rel="stylesheet" href="CSS/divide.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Portfolio</title>
+</head>
+<body>
+    <div id="Home"> 
+    <div class="navigation">
+        <a href="#" class="logo"><img src="../Portfolio/Images/22.png" alt=""></a>
+        <ul>
+            <li class="nav"><a href="#Home">Home</a></li>
+            <li class="nav"><a href="#About">About</a></li>
+            <li class="nav"><a href="#Skills">Skills</a></li>
+            <li class="nav"><a href="#Contact">Contact</a></li>
+        </ul>
+        </div>
+<script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script><br><br><br><br>
+        <p style=  "margin-top: 4%;margin-left: 15%; font-size: 70px; font-family: 'Roboto', sans-serif;">
+            VIVEK
+        </p> 
+        <h1 style="margin-left: 15%; margin-top: -3.5%; font-size: 75px;font-family: 'Roboto', sans-serif;">
+            MENON
+        </h1>
+        <p style="margin-left: 15%; margin-top: -2%; letter-spacing: 0.6em;">Frontend
+            <mark style="background-color:rgba(240, 248, 255, 0.221);">Developer
+            </mark></p><br><br>
+           <a href="Vivek Menon.pdf" class="download" download><i class="fa-solid fa-download">&nbsp;&nbsp;&nbsp;</i>Resume</a>      
+            <br><br><br>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/vivek-menon-a83a211ab/">
+                    <i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/aka_aggrandize/">
+                        <i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/aka_aggrandize">
+                            <i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://wa.me/919106830329">
+                                <i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+           <a href="#Home"><i class="fa-solid fa-angle-up" id="up"></i></a>
+    </div><br>
+
+    <div id="About"><br>
+        <h3>About</h3>
+        <p><b>vivekmenon290301@gmail.com</b></p>
+        <div class="content">   
+            Dedicated and Results-driven Frontend DevOps professional with a passion
+            for bridging the gap between development and operations. With a blend of 
+            technical expertise and a keen eye for frontend development, I thrive in 
+            creating seamless, efficient, and scalable web applications. <br><br><br>
+            <b>Technical Proficiency</b><br>
+            I bring a strong foundation in frontend technologies, including proficiency
+            in HTML, CSS, and JavaScript.<br><br><br>
+            <b>Problem Solver</b><br>
+                I am genuinely enthusiastic about solving complex problems and optimizing 
+                workflows. I believe that a well-designed DevOps strategy is the backbone of
+                delivering high-quality, user-centric applications.
+            </div><br><br>
+        </div><br>
+        <div id="Skills">
+            <br>
+            <h3>Skills</h3>
+
+            <div class="list">
+                
+                <div class="list2">
+                    <img src="Images\8.png" alt=""><br><br>HTML
+                </div>
+
+                <div class="list2">
+                    <img src="Images\9.png" alt=""><br><br>CSS
+                </div>
+                
+                <div class="list2">
+                    <img src="Images\10.png" alt=""><br><br>Java  Script
+                </div>
+
+                <div class="list2">
+                    <img src="Images\11.png" alt=""><br><br>Angular JS
+                </div> <br>
+            </div>
+
+            <div class="list">
+
+                
+                <div class="list1">
+                    <img src="Images\7.png" alt=""><br><br>Web Development
+                </div>
+                
+                <div class="list1">
+                    <img src="Images\14.png" alt=""><br><br>Adobe Photoshop
+                </div>
+                
+                <div class="list1">
+                    <img src="Images\12.png" alt=""><br><br>Web Research
+                </div>
+            </div><br><br>
+        </div><br>
+
+        <div id="Contact">
+            <br><br>
+            <h3>Reach me</h3>
+            <p>I am flexible regarding the location of the role and am prepared to relocate if required. <br>
+               I approach relocation as a practical aspect of the job and am ready to adapt <br>
+               to a new environment as part of my commitment to the position.</p>
+            
+            <div class="connect">
+                <div class="column">
+                    <h4><i class="fa-solid fa-mobile"></i>&nbsp;&nbsp;&nbsp;Contact</h4>
+                    <p>(+91) 91068-30329</p>
+                    <h4><i class="fa-regular fa-envelope"></i>&nbsp;&nbsp;&nbsp;Email</h4>
+                    <p>vivekmenon290301@gmail.com</p>
+                    <h4><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;&nbsp;Address</h4>
+                    <p>Motera, Ahmedabad <br>
+                        Gujarat, 380005</p>
+                    <script>
+                        window.onload = function () { 
+                            var canvas = document.getElementById("mcanvas");
+                            var ctext = canvas.getContext("2d");
+                            ctext.beginPath();
+                            ctext.moveTo(40, 90);
+                            ctext.lineTo(40, 500);
+                            ctext.lineWidth = 0;
+                            ctext.strokeStyle = "white";
+                            ctext.stroke();
+                        };
+                    </script>
+                    
+                    <canvas id="mcanvas" width="300" height="600"></canvas>
+                </div>
+                <div class="column">
+                    <h4>Social Media</h4>
+                    <a href="https://twitter.com/aka_aggrandize"><img src="Images/16.png" alt=""></a>
+                    <a href="https://wa.me/919106830329"><img src="Images/17.png" alt=""></a>
+                    <a href="https://www.instagram.com/aka_aggrandize/"><img src="Images/19.png" alt=""></a>
+                    <a href="https://in.pinterest.com/vivekmenon290301/_created/"><img src="Images/20.png" alt=""></a>
+
+                </div>
+            </div>
+        </div>
+        
+
+        </div>
+    </body>
+    </html>

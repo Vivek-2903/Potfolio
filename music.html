@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Music Page</title>
+    <style>
+        /* Add your custom styling here */
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Your Full Name</h1>
+        <!-- Add your other header content here -->
+    </header>
+
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Recent graduate with a degree in [Your Major]. Passionate about [Your Field]. Eager to contribute my skills in [Specific Skills] to innovative projects.</p>
+    </section>
+
+    <!-- Continue with other sections (Skills, Education, Projects, etc.) -->
+
+    <footer>
+        <p>&copy; 2023 Your Name | <a href="#top">Back to Top</a></p>
+        <button id="musicToggle">Toggle Music</button>
+    </footer>
+
+    <audio id="backgroundMusic" loop>
+        <source src="About.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        // Get the audio element and the button
+        const audio = document.getElementById('backgroundMusic');
+        const musicToggle = document.getElementById('musicToggle');
+
+        // Add an event listener to the button
+        musicToggle.addEventListener('click', function() {
+            // Toggle between play and pause
+            if (audio.paused) {
+                audio.play();
+                musicToggle.textContent = 'Pause Music';
+            } else {
+                audio.pause();
+                musicToggle.textContent = 'Play Music';
+            }
+        });
+
+        // Add event listener to pause music when scrolling
+        window.addEventListener('scroll', function() {
+            audio.pause();
+            musicToggle.textContent = 'Play Music';
+        });
+    </script>
+
+</body>
+</html>
